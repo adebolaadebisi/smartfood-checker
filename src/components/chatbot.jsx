@@ -1,70 +1,109 @@
 import { useState } from "react";
-import { calculateNutrition } from "../utils/calculateNutrition";
 
-export default function ChatBot() {
-  const [messages, setMessages] = useState([
-    { from: "bot", text: "Hi! I’m your Food Assistant 🤖. Ask me about any food!" },
-  ]);
+export default function Chatbot() {
   const [input, setInput] = useState("");
+  const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-  const handleSend = () => {
-    if (!input) return;
+  const recommendationStyles = {
+    Okay: "bg-emerald-100 text-emerald-800 border-emerald-300",
+    "Eat a little": "bg-amber-100 text-amber-800 border-amber-300",
+    Limit: "bg-red-100 text-red-800 border-red-300",
+  };
 
-    const userMessage = { from: "user", text: input };
+  const handleSend = async () => {
+    const question = input.trim();
+    if (!question || loading) return;
 
-    // Check if input matches a known food
-    const lowerInput = input.toLowerCase();
-    let botText = "Sorry, I don't have info on that food yet.";
-
-    // For demo, we use the calculateNutrition function
-    const nutrition = calculateNutrition(lowerInput); 
-    if (nutrition) {
-      botText = `${input} has approx. ${nutrition.calories} kcal, ${nutrition.protein}g protein, ${nutrition.carbs}g carbs, ${nutrition.fat}g fat.`;
-
-      // Optional advice based on calories
-      if (nutrition.calories > 500) {
-        botText += " ⚠️ That's a high-calorie food. Consider eating in moderation.";
-      } else if (nutrition.protein < 5) {
-        botText += " 💡 Add some protein to balance your meal.";
-      } else {
-        botText += " ✅ A balanced choice!";
-      }
-    }
-
-    const botMessage = { from: "bot", text: botText };
-
-    setMessages([...messages, userMessage, botMessage]);
+    setMessages((prev) => [...prev, { role: "user", text: question }]);
     setInput("");
+    setLoading(true);
+
+    try {
+      const res = await fetch("http://localhost:8000/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: question }),
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        setMessages((prev) => [
+          ...prev,
+          { role: "bot", text: err.message || "Chat request failed.", sources: [] },
+        ]);
+        return;
+      }
+
+      const data = await res.json();
+      setMessages((prev) => [
+        ...prev,
+        { role: "bot", text: data.answer, sources: data.sources || [] },
+      ]);
+    } catch {
+      setMessages((prev) => [
+        ...prev,
+        { role: "bot", text: "Error connecting to server. Please try again.", sources: [] },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") handleSend();
   };
 
   return (
-    <div className="fixed bottom-4 right-4 w-80 max-w-full bg-white shadow-xl rounded-xl p-4 flex flex-col">
-      <h3 className="font-bold text-green-700 mb-2">Food ChatBot 🤖</h3>
-      <div className="flex-1 overflow-y-auto mb-2 max-h-64 space-y-2">
-        {messages.map((m, i) => (
+    <div className="w-full max-w-2xl p-4 bg-green-50 rounded-2xl shadow-lg flex flex-col gap-3">
+      <h2 className="text-2xl font-bold text-green-800 mb-2">Food RAG Chatbot</h2>
+
+      <div className="flex flex-col gap-2 max-h-96 overflow-y-auto">
+        {messages.map((msg, idx) => (
           <div
-            key={i}
-            className={`p-2 rounded-lg ${
-              m.from === "bot" ? "bg-green-100 text-green-900 self-start" : "bg-gray-200 self-end"
-            }`}
+            key={idx}
+            className={`p-3 rounded-lg ${msg.role === "user" ? "bg-green-200 self-end" : "bg-white self-start"} max-w-full`}
           >
-            {m.text}
+            <p className="whitespace-pre-line">{msg.text}</p>
+            {msg.role === "bot" && msg.sources?.length > 1 && (
+              <div className="mt-2 text-sm">
+                <p className="font-semibold text-green-800">Sources:</p>
+                <ul className="list-disc pl-5">
+                  {msg.sources.map((source, i) => (
+                    <li key={`${source.name}-${i}`}>
+                      {source.name} ({source.serving_size}) - {source.calories} kcal
+                      {source.recommendation && (
+                        <span
+                          className={`ml-2 inline-flex items-center rounded-full border px-2 py-0.5 text-xs font-semibold ${recommendationStyles[source.recommendation] || "bg-slate-100 text-slate-800 border-slate-300"}`}
+                        >
+                          {source.recommendation}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         ))}
       </div>
-      <div className="flex gap-2">
+
+      <div className="flex gap-2 mt-2">
         <input
           type="text"
+          placeholder="Ask a nutrition question..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="flex-1 border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-400"
-          placeholder="Ask me something..."
+          onKeyDown={handleKeyDown}
+          className="flex-1 px-4 py-2 rounded-lg border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600"
+          disabled={loading}
         />
         <button
           onClick={handleSend}
-          className="bg-green-600 text-white p-2 rounded-lg hover:bg-green-700 transition"
+          className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition disabled:opacity-70"
+          disabled={loading}
         >
-          Send
+          {loading ? "..." : "Send"}
         </button>
       </div>
     </div>

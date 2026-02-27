@@ -31,7 +31,7 @@ export default function LandingPage({ onStart }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
+    const frame = requestAnimationFrame(() => setMounted(true));
     const interval = setInterval(() => {
       setVisible(false);
       setTimeout(() => {
@@ -39,7 +39,10 @@ export default function LandingPage({ onStart }) {
         setVisible(true);
       }, 400);
     }, 2000);
-    return () => clearInterval(interval);
+    return () => {
+      cancelAnimationFrame(frame);
+      clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -392,7 +395,7 @@ export default function LandingPage({ onStart }) {
 
         {/* Nav */}
         <nav className="nav">
-          <span className="logo">🌿 FoodCheck</span>
+          <span className="logo">🌿 MealMirror</span>
           <span className="nav-badge">Free to use</span>
         </nav>
 
@@ -442,7 +445,7 @@ export default function LandingPage({ onStart }) {
 
         {/* Footer */}
         <footer className="footer">
-          Powered by Claude AI · Smart Food Checker © 2025
+           MealMirror © 2025
         </footer>
       </div>
     </>

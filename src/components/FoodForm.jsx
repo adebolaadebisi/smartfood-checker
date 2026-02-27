@@ -1,50 +1,29 @@
-// import { useState } from "react";
-// import { calculateNutrition } from "../utils/calculateNutrition";
 
-// export default function FoodForm({ setResult }) {
-//   const [food, setFood] = useState("");
-
-//   const analyzeFood = () => {
-//     if (!food) return;
-//     const nutrition = calculateNutrition(food);
-//     setResult(nutrition);
-//   };
-
-//   return (
-//     <div className="w-full max-w-md">
-//       <input
-//         type="text"
-//         placeholder="Enter food (e.g., rice chicken)"
-//         className="w-full p-3 border rounded-lg mb-3"
-//         value={food}
-//         onChange={(e) => setFood(e.target.value)}
-//       />
-//       <button
-//         onClick={analyzeFood}
-//         className="w-full bg-green-600 text-white p-3 rounded-lg hover:bg-green-700 transition"
-//       >
-//         Analyze Food
-//       </button>
-//     </div>
-//   );
-// }
 
 import { useState } from "react";
-import { calculateNutrition } from "../utils/calculateNutrition";
+
 
 export default function FoodForm({ setResult }) {
   const [food, setFood] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const analyzeFood = () => {
+
+  const analyzeFood = async () => {
     if (!food) return;
     setLoading(true);
-
-    setTimeout(() => {
-      const nutrition = calculateNutrition(food);
-      setResult(nutrition, food);
-      setLoading(false);
-    }, 500);
+    try {
+      // Call backend API for the food (trim and encode)
+      const response = await fetch(`http://localhost:8000/api/food/${encodeURIComponent(food.trim())}`);
+      if (!response.ok) {
+        setResult(null, food);
+      } else {
+        const nutrition = await response.json();
+        setResult(nutrition, food);
+      }
+    } catch {
+      setResult(null, food);
+    }
+    setLoading(false);
   };
 
   return (
