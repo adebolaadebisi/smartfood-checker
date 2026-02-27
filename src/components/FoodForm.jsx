@@ -1,6 +1,7 @@
 
 
 import { useState } from "react";
+import { apiUrl } from "../config/api";
 
 
 export default function FoodForm({ setResult }) {
@@ -13,7 +14,7 @@ export default function FoodForm({ setResult }) {
     setLoading(true);
     try {
       // Call backend API for the food (trim and encode)
-      const response = await fetch(`http://localhost:8000/api/food/${encodeURIComponent(food.trim())}`);
+      const response = await fetch(apiUrl(`/api/food/${encodeURIComponent(food.trim())}`));
       if (!response.ok) {
         setResult(null, food);
       } else {

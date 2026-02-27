@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import LandingPage from "./components/LandingPage";
 import Chatbot from "./components/chatbot";
+import { apiUrl } from "./config/api";
 
 const RECENT_SEARCHES_KEY = "food_checker_recent_searches";
 const AUTH_USERS_KEY = "food_checker_auth_users";
@@ -166,9 +167,7 @@ export default function App() {
     if (!query) return;
 
     try {
-      const res = await fetch(
-        `http://localhost:8000/api/food-search?q=${encodeURIComponent(query)}`,
-      );
+      const res = await fetch(apiUrl(`/api/food-search?q=${encodeURIComponent(query)}`));
       if (!res.ok) throw new Error("Food not found");
 
       const data = await res.json();
@@ -191,7 +190,9 @@ export default function App() {
     setCompareLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:8000/api/compare?food1=${encodeURIComponent(food1)}&food2=${encodeURIComponent(food2)}&goal=${encodeURIComponent(compareGoal)}`,
+        apiUrl(
+          `/api/compare?food1=${encodeURIComponent(food1)}&food2=${encodeURIComponent(food2)}&goal=${encodeURIComponent(compareGoal)}`,
+        ),
       );
 
       if (!res.ok) {
@@ -242,7 +243,7 @@ export default function App() {
 
     setGoalLoading(true);
     try {
-      const res = await fetch(`http://localhost:8000/api/recommendations?${params.toString()}`);
+      const res = await fetch(apiUrl(`/api/recommendations?${params.toString()}`));
       if (!res.ok) {
         const errData = await res.json().catch(() => ({}));
         throw new Error(errData.message || "Could not fetch recommendations.");
