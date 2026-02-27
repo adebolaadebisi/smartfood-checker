@@ -55,16 +55,16 @@ export default function Chatbot() {
   };
 
   return (
-    <div className="w-full max-w-2xl p-4 bg-green-50 rounded-2xl shadow-lg flex flex-col gap-3">
-      <h2 className="text-2xl font-bold text-green-800 mb-2">Food RAG Chatbot</h2>
+    <div className="w-full max-w-2xl p-3 sm:p-4 bg-green-50 rounded-2xl shadow-lg flex flex-col gap-3">
+      <h2 className="text-xl sm:text-2xl font-bold text-green-800 mb-2">Food RAG Chatbot</h2>
 
       <div className="flex flex-col gap-2 max-h-96 overflow-y-auto">
         {messages.map((msg, idx) => (
           <div
             key={idx}
-            className={`p-3 rounded-lg ${msg.role === "user" ? "bg-green-200 self-end" : "bg-white self-start"} max-w-full`}
+            className={`p-3 rounded-lg ${msg.role === "user" ? "bg-green-200 self-end" : "bg-white self-start"} max-w-full sm:max-w-[90%]`}
           >
-            <p className="whitespace-pre-line">{msg.text}</p>
+            <p className="whitespace-pre-line break-words">{msg.text}</p>
             {msg.role === "bot" && msg.sources?.length > 1 && (
               <div className="mt-2 text-sm">
                 <p className="font-semibold text-green-800">Sources:</p>
@@ -88,7 +88,7 @@ export default function Chatbot() {
         ))}
       </div>
 
-      <div className="flex gap-2 mt-2">
+      <div className="flex flex-col sm:flex-row gap-2 mt-2">
         <input
           type="text"
           placeholder="Ask a nutrition question..."
@@ -100,7 +100,7 @@ export default function Chatbot() {
         />
         <button
           onClick={handleSend}
-          className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition disabled:opacity-70"
+          className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition disabled:opacity-70"
           disabled={loading}
         >
           {loading ? "..." : "Send"}

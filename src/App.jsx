@@ -271,8 +271,8 @@ export default function App() {
 
   if (!currentUser) {
     return (
-      <div className="min-h-screen bg-green-50 flex items-center justify-center p-6">
-        <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-6">
+      <div className="min-h-screen bg-green-50 flex items-center justify-center p-4 sm:p-6">
+        <div className="w-full max-w-md bg-white rounded-2xl shadow-xl p-5 sm:p-6">
           <h1 className="text-2xl font-bold text-green-800 text-center mb-2">MealMirror</h1>
           <p className="text-sm text-slate-600 text-center mb-6">
             {authMode === "login" ? "Login to your account" : "Create your account"}
@@ -363,9 +363,9 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-green-50 p-6">
+    <div className="min-h-screen bg-green-50 p-3 sm:p-4 md:p-6">
       <div className="w-full max-w-3xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 mb-5 flex items-center justify-between gap-3">
+        <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-5 mb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <h1 className="text-xl sm:text-2xl font-bold text-green-800">MealMirror</h1>
             <p className="text-sm text-slate-600">
@@ -374,7 +374,7 @@ export default function App() {
           </div>
           <button
             onClick={handleLogout}
-            className="bg-slate-100 hover:bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm"
+            className="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-800 px-4 py-2 rounded-lg text-sm"
           >
             Logout
           </button>
@@ -420,19 +420,19 @@ export default function App() {
         )}
 
         {activeTool === "check" && (
-          <div className="bg-white shadow-xl rounded-2xl p-6">
-            <h2 className="text-2xl font-bold mb-4 text-green-800">Check Food</h2>
+          <div className="bg-white shadow-xl rounded-2xl p-4 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-green-800">Check Food</h2>
             <div className="mb-6 flex flex-col sm:flex-row gap-3">
               <input
                 type="text"
                 placeholder="Enter food name..."
                 value={foodName}
                 onChange={(e) => setFoodName(e.target.value)}
-                className="px-4 py-2 rounded-lg border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600"
+                className="w-full min-w-0 px-4 py-2 rounded-lg border border-green-400 focus:outline-none focus:ring-2 focus:ring-green-600"
               />
               <button
                 onClick={() => checkFood()}
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition"
+                className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition"
               >
                 Check Food
               </button>
@@ -503,8 +503,8 @@ export default function App() {
         )}
 
         {activeTool === "compare" && (
-          <div className="bg-white shadow-xl rounded-2xl p-6">
-            <h2 className="text-2xl font-bold mb-4 text-green-800">Compare Two Foods</h2>
+          <div className="bg-white shadow-xl rounded-2xl p-4 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-green-800">Compare Two Foods</h2>
             <div className="flex flex-col gap-3">
               <select
                 value={compareGoal}
@@ -532,7 +532,7 @@ export default function App() {
               <button
                 onClick={compareFoods}
                 disabled={compareLoading}
-                className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition disabled:opacity-60"
+                className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition disabled:opacity-60"
               >
                 {compareLoading ? "Comparing..." : "Compare"}
               </button>
@@ -586,8 +586,8 @@ export default function App() {
         )}
 
         {activeTool === "recommend" && (
-          <div className="bg-white shadow-xl rounded-2xl p-6">
-            <h2 className="text-2xl font-bold mb-4 text-green-800">Goal-Based Recommendations</h2>
+          <div className="bg-white shadow-xl rounded-2xl p-4 sm:p-6">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-green-800">Goal-Based Recommendations</h2>
             <p className="text-sm text-slate-700 mb-3">
               Pick your goal, then set simple limits to control what foods are suggested.
             </p>
@@ -662,7 +662,7 @@ export default function App() {
             <button
               onClick={fetchRecommendations}
               disabled={goalLoading}
-              className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition disabled:opacity-60"
+              className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition disabled:opacity-60"
             >
               {goalLoading ? "Loading..." : "Get Recommendations"}
             </button>
@@ -694,7 +694,7 @@ export default function App() {
 
         {activeTool === "chat" && (
           <div className="bg-white shadow-xl rounded-2xl p-4">
-            <h2 className="text-2xl font-bold mb-4 text-green-800">Nutrition Chat</h2>
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 text-green-800">Nutrition Chat</h2>
             <Chatbot />
           </div>
         )}

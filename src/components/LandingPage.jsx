@@ -367,7 +367,54 @@ export default function LandingPage({ onStart }) {
 
         @media (max-width: 768px) {
           .nav { padding: 20px 24px; }
+          .hero { padding: 28px 18px 44px; }
+          .tag { margin-bottom: 20px; }
+          .subtitle {
+            font-size: 0.95rem;
+            line-height: 1.55;
+            margin-bottom: 28px;
+          }
+          .cta-group {
+            width: 100%;
+            max-width: 360px;
+            flex-direction: column;
+          }
+          .btn-primary,
+          .btn-secondary {
+            width: 100%;
+            justify-content: center;
+            padding: 14px 20px;
+          }
+          .features {
+            gap: 18px;
+            margin-top: 36px;
+          }
+          .feature-icon {
+            width: 46px;
+            height: 46px;
+            font-size: 1.4rem;
+          }
+          .feature-label { font-size: 0.72rem; }
           .deco-card { display: none; }
+        }
+
+        @media (max-width: 480px) {
+          .nav {
+            padding: 16px;
+            gap: 10px;
+          }
+          .logo { font-size: 1rem; }
+          .nav-badge {
+            font-size: 0.68rem;
+            padding: 5px 10px;
+          }
+          h1 { line-height: 1.08; }
+          .food-ticker { margin-bottom: 22px; }
+          .footer { padding: 16px 12px; }
+          .blob {
+            filter: blur(50px);
+            opacity: 0.28;
+          }
         }
       `}</style>
 
