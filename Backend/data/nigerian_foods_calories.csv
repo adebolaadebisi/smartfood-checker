@@ -1,0 +1,288 @@
+category,food_name,serving_size,calories_kcal
+Rice Dishes,Jollof Rice,1 cup (200g),340
+Rice Dishes,Fried Rice,1 cup (200g),380
+Rice Dishes,White Rice,1 cup (200g),260
+Rice Dishes,Coconut Rice,1 cup (200g),360
+Rice Dishes,Rice and Beans (Waakye),1 cup (200g),290
+Rice Dishes,Ofada Rice (Brown Rice),1 cup (200g),270
+Rice Dishes,Ofada Stew with Rice,1 plate (350g),520
+Rice Dishes,Native Jollof Rice (Smoky),1 cup (200g),355
+Rice Dishes,Rice and Stew,1 plate (350g),440
+Rice Dishes,Concoction Rice,1 cup (200g),370
+Soups & Stews,Egusi Soup,1 cup (250ml),450
+Soups & Stews,Edikaikong Soup,1 cup (250ml),280
+Soups & Stews,Okra Soup,1 cup (250ml),200
+Soups & Stews,Ogbono Soup,1 cup (250ml),380
+Soups & Stews,Bitterleaf Soup,1 cup (250ml),260
+Soups & Stews,Oha Soup,1 cup (250ml),240
+Soups & Stews,Afang Soup,1 cup (250ml),300
+Soups & Stews,Nsala (White Soup),1 cup (250ml),320
+Soups & Stews,Tomato Stew,1/2 cup (125ml),180
+Soups & Stews,Efo Riro,1 cup (250ml),270
+Soups & Stews,Banga Soup,1 cup (250ml),410
+Soups & Stews,Miyan Kuka,1 cup (250ml),160
+Soups & Stews,Miyan Taushe,1 cup (250ml),200
+Soups & Stews,Miyan Karkashi,1 cup (250ml),190
+Soups & Stews,Miyan Yakuwa (Sorrel Soup),1 cup (250ml),170
+Soups & Stews,Groundnut Soup,1 cup (250ml),400
+Soups & Stews,Abak Atama Soup,1 cup (250ml),390
+Soups & Stews,Ofe Onugbu (Bitter Leaf),1 cup (250ml),255
+Soups & Stews,Otong Soup,1 cup (250ml),310
+Soups & Stews,Ofe Owerri,1 cup (250ml),340
+Soups & Stews,Tomato & Pepper Sauce,1/2 cup (125ml),130
+Soups & Stews,Vegetable Soup (Mixed),1 cup (250ml),180
+Swallows / Fufu,Pounded Yam,1 wrap (300g),390
+Swallows / Fufu,Eba (Garri),1 wrap (300g),340
+Swallows / Fufu,Amala (Yam Flour),1 wrap (300g),310
+Swallows / Fufu,Tuwo Shinkafa,1 wrap (300g),370
+Swallows / Fufu,Semovita,1 wrap (300g),360
+Swallows / Fufu,Fufu (Cassava),1 wrap (300g),330
+Swallows / Fufu,Wheat Meal,1 wrap (300g),300
+Swallows / Fufu,Oat Fufu,1 wrap (300g),280
+Swallows / Fufu,Plantain Fufu,1 wrap (300g),320
+Swallows / Fufu,Amala Abula,1 wrap (300g),310
+Swallows / Fufu,Cassava Fufu (Akpu),1 wrap (300g),335
+Swallows / Fufu,Tuwo Masara (Corn Fufu),1 wrap (300g),345
+Swallows / Fufu,Lafun,1 wrap (300g),290
+Swallows / Fufu,Starch (Delta Style),1 wrap (300g),360
+Beans & Legumes,Moi Moi (steamed),1 wrap (150g),220
+Beans & Legumes,Akara (Bean Cakes),3 pieces (120g),280
+Beans & Legumes,Beans Porridge,1 cup (200g),300
+Beans & Legumes,Ewa Agoyin,1 cup (200g),320
+Beans & Legumes,Gbegiri (Bean Soup),1 cup (250ml),230
+Beans & Legumes,Moi Moi (with fish and egg),1 wrap (180g),290
+Beans & Legumes,Black-eyed Peas Porridge,1 cup (200g),280
+Beans & Legumes,Honey Beans Porridge,1 cup (200g),310
+Beans & Legumes,Akaun Beans (Potash Beans),1 cup (200g),295
+Beans & Legumes,Bambara Nut Soup,1 cup (250ml),350
+Yam & Tubers,Boiled Yam,1 medium slice (200g),240
+Yam & Tubers,Yam Porridge (Asaro),1 cup (250g),310
+Yam & Tubers,Fried Yam,1 cup (150g),350
+Yam & Tubers,Baked Yam,1 medium (200g),220
+Yam & Tubers,Yam and Egg Sauce,1 plate (350g),430
+Yam & Tubers,Pepper Soup Yam,1 cup (200g),250
+Yam & Tubers,Yam Pottage with Ube,1 cup (250g),370
+Yam & Tubers,Yam and Vegetable Stew,1 plate (350g),400
+Yam & Tubers,Boiled Cocoyam,1 cup (200g),210
+Yam & Tubers,Cocoyam Pottage,1 cup (250g),270
+Yam & Tubers,Boiled Cassava (Akpu),1 cup (200g),220
+Yam & Tubers,Abacha (African Salad),1 plate (250g),400
+Yam & Tubers,Tapioca (Cassava Pearls),1 cup (200g),230
+Yam & Tubers,Water Yam Porridge,1 cup (250g),290
+Plantain & Corn,Fried Plantain (Dodo),5 slices (150g),260
+Plantain & Corn,Boiled Plantain,1 medium (200g),220
+Plantain & Corn,Boli (Roasted Plantain),1 medium (200g),200
+Plantain & Corn,Plantain Chips,1 pack (50g),220
+Plantain & Corn,Corn on the Cob (boiled),1 cob (160g),150
+Plantain & Corn,Roasted Corn,1 cob (160g),170
+Plantain & Corn,Akamu/Pap (Ogi),1 cup (250ml),120
+Plantain & Corn,Plantain Porridge (Unripe),1 cup (250g),280
+Plantain & Corn,Dodo Ikire (Overripe Fried Plantain),5 pieces (150g),300
+Plantain & Corn,Plantain Mosa,3 pieces (100g),250
+Plantain & Corn,Corn Meal (Tuwo Masara),1 cup (200g),200
+Plantain & Corn,Popcorn (plain),2 cups (30g),110
+Plantain & Corn,Corn Pap (thick),1 cup (250ml),160
+Meat & Protein,Suya (Grilled Beef),100g,220
+Meat & Protein,Peppered Chicken,1 piece (150g),310
+Meat & Protein,Peppered Gizzard,100g,190
+Meat & Protein,Peppered Snail,100g,90
+Meat & Protein,Nkwobi (Cow Foot),1 portion (200g),360
+Meat & Protein,Asun (Peppered Goat Meat),100g,250
+Meat & Protein,Isi Ewu (Goat Head),1 serving (200g),380
+Meat & Protein,Peppered Turkey,1 piece (150g),280
+Meat & Protein,Kilishi (Dried Beef),50g,175
+Meat & Protein,Fried Fish,1 medium (150g),280
+Meat & Protein,Pepper Soup (Goat Meat),1 bowl (300ml),240
+Meat & Protein,Catfish Pepper Soup,1 bowl (300ml),200
+Meat & Protein,Cow Leg (Nkwobi style),1 portion (200g),340
+Meat & Protein,Grilled Chicken,1 piece (150g),270
+Meat & Protein,Smoked Fish (Panla),1 medium (100g),190
+Meat & Protein,Stockfish (dried),50g,160
+Meat & Protein,Crayfish,2 tbsp (20g),70
+Meat & Protein,Ogufe (Mudfish Pepper Soup),1 bowl (300ml),210
+Meat & Protein,Grilled Tilapia,1 medium (200g),220
+Meat & Protein,Nkwobi (Cow Tail),1 portion (200g),370
+Meat & Protein,Chicken Pepper Soup,1 bowl (300ml),230
+Meat & Protein,Beef Stew,1/2 cup (125ml),220
+Meat & Protein,Oxtail Stew,1/2 cup (125ml),280
+Meat & Protein,Prawns (peppered),100g,140
+Meat & Protein,Snail (garden snail),100g,80
+Snacks & Street Food,Puff Puff,3 pieces (90g),280
+Snacks & Street Food,Chin Chin,1 cup (80g),380
+Snacks & Street Food,Buns,2 pieces (80g),290
+Snacks & Street Food,Meat Pie,1 piece (130g),360
+Snacks & Street Food,Fish Roll,1 piece (100g),290
+Snacks & Street Food,Egg Roll,1 piece (120g),320
+Snacks & Street Food,Coconut Candy,4 pieces (60g),260
+Snacks & Street Food,Kuli Kuli (Groundnut Cake),50g,280
+Snacks & Street Food,Roasted Groundnuts,1/4 cup (40g),230
+Snacks & Street Food,Groundnut (Peanut) Soup,1 cup (250ml),400
+Snacks & Street Food,Donuts (Nigerian Style),2 pieces (100g),370
+Snacks & Street Food,Aadun (Corn Snack),50g,210
+Snacks & Street Food,Kokoro (Corn Snack),50g,230
+Snacks & Street Food,Ojojo (Water Yam Fritters),3 pieces (100g),260
+Snacks & Street Food,Spring Roll (Nigerian),2 pieces (100g),300
+Snacks & Street Food,Samosa (Nigerian),2 pieces (100g),310
+Snacks & Street Food,Masa (Rice Cake),3 pieces (120g),240
+Snacks & Street Food,Gurasa (Hausa Bread),1 piece (100g),260
+Snacks & Street Food,Akara with Ogi,1 plate (300g),390
+Breakfast & Porridge,Oatmeal (Quaker Oats),1 cup (250ml),150
+Breakfast & Porridge,Custard,1 cup (250ml),170
+Breakfast & Porridge,Golden Morn Cereal,1 cup (40g dry),160
+Breakfast & Porridge,Noodles (Indomie),1 pack (70g),320
+Breakfast & Porridge,Bread (Agege Bread),2 slices (80g),220
+Breakfast & Porridge,Millet Porridge,1 cup (250ml),140
+Breakfast & Porridge,Bread and Egg (fried),1 plate (200g),370
+Breakfast & Porridge,Boiled Egg,2 eggs (100g),155
+Breakfast & Porridge,Fried Egg,2 eggs (100g),190
+Breakfast & Porridge,Omelette (plain),1 large (150g),210
+Breakfast & Porridge,Spaghetti (Nigerian style),1 cup (250g),390
+Breakfast & Porridge,Cornflakes with Milk,1 bowl (200ml milk + 30g cereal),220
+Breakfast & Porridge,Akara and Bread,1 plate (200g),450
+Breakfast & Porridge,Ogi (thin pap),1 cup (250ml),100
+Salads & Light Meals,Abacha (African Salad),1 plate (250g),400
+Salads & Light Meals,Ugba (Oil Bean Salad),100g,310
+Salads & Light Meals,Garden Egg Salad,1 cup (200g),130
+Salads & Light Meals,Nigerian Coleslaw,1 cup (150g),180
+Salads & Light Meals,Nigerian Vegetable Salad,1 cup (150g),110
+Salads & Light Meals,Boiled Egg Salad,1 plate (200g),230
+Salads & Light Meals,Cucumber and Tomato Salad,1 cup (150g),60
+Salads & Light Meals,Bole and Fish (Boli na Eja),1 serving (350g),430
+Salads & Light Meals,Ukwa (African Breadfruit),1 cup (200g),320
+Salads & Light Meals,Garden Egg Sauce,1/2 cup (125ml),140
+Salads & Light Meals,Ube (African Pear),2 medium (80g),160
+Salads & Light Meals,Tiger Nuts (Aya),1/4 cup (40g),155
+Desserts & Sweets,Coconut Cake,1 slice (100g),350
+Desserts & Sweets,Nigerian Biscuit Cake,1 slice (100g),380
+Desserts & Sweets,Groundnut Brittle (Toffee),50g,240
+Desserts & Sweets,Fried Ripe Banana,1 medium (120g),210
+Desserts & Sweets,Coconut Squares,2 pieces (50g),200
+Desserts & Sweets,Nigerian Sponge Cake,1 slice (100g),360
+Desserts & Sweets,Pineapple Cake,1 slice (100g),330
+Desserts & Sweets,Zobo Jelly/Pudding,1 cup (150g),90
+Desserts & Sweets,Caramel Chin Chin,1/2 cup (50g),260
+Desserts & Sweets,Ofio (Sesame Brittle),50g,270
+Desserts & Sweets,Nigerian Ice Cream (Fan Ice),1 pack (100ml),130
+Desserts & Sweets,Coconut Ice Cream,1 scoop (100g),200
+Northern Nigerian Specialties,Dan Wake (Bean Dumplings),1 cup (200g),310
+Northern Nigerian Specialties,Miyan Zogale (Moringa Soup),1 cup (250ml),150
+Northern Nigerian Specialties,Gwate (Okra Leaf Soup),1 cup (250ml),170
+Northern Nigerian Specialties,Jollof Spaghetti,1 cup (250g),380
+Northern Nigerian Specialties,Dambu Nama (Shredded Beef),100g,200
+Northern Nigerian Specialties,Fura (Millet Balls),3 balls (100g),200
+Northern Nigerian Specialties,Waina (Hausa Rice Cake),3 pieces (120g),240
+Northern Nigerian Specialties,Miyan Kubewa (Okra Soup),1 cup (250ml),185
+Northern Nigerian Specialties,Dakuwa (Groundnut and Grain Snack),50g,265
+Northern Nigerian Specialties,Nono (Fresh Cow Milk Yogurt),1 cup (250ml),160
+Southern Nigerian Specialties,Banga Rice (Palm Nut Rice),1 plate (350g),520
+Southern Nigerian Specialties,Fisherman's Soup (Delta),1 bowl (300ml),290
+Southern Nigerian Specialties,Edikang Ikong Soup,1 cup (250ml),300
+Southern Nigerian Specialties,Otong Soup (Ibibio),1 cup (250ml),310
+Southern Nigerian Specialties,Ofe Akwu (Palm Nut Soup),1 cup (250ml),420
+Southern Nigerian Specialties,Ofe Egusi (Igbo Style),1 cup (250ml),460
+Southern Nigerian Specialties,Owo Soup (Ondo),1 cup (250ml),350
+Southern Nigerian Specialties,Ekpang Nkukwo,1 cup (250g),380
+Southern Nigerian Specialties,Atama Soup (Efik),1 cup (250ml),390
+Southern Nigerian Specialties,Mbanga Soup,1 cup (250ml),400
+Fast Food & Continental,Chicken Shawarma,1 wrap (250g),520
+Fast Food & Continental,Beef Shawarma,1 wrap (250g),560
+Fast Food & Continental,Mixed Shawarma (Chicken and Beef),1 wrap (250g),540
+Fast Food & Continental,Shawarma (small/half wrap),1 wrap (130g),270
+Fast Food & Continental,Pepperoni Pizza (1 slice),1 slice (100g),285
+Fast Food & Continental,Chicken Pizza (1 slice),1 slice (100g),260
+Fast Food & Continental,Beef Pizza (1 slice),1 slice (100g),275
+Fast Food & Continental,Margherita Pizza (1 slice),1 slice (100g),235
+Fast Food & Continental,BBQ Chicken Pizza (1 slice),1 slice (100g),270
+Fast Food & Continental,Veggie Pizza (1 slice),1 slice (100g),210
+Fast Food & Continental,Full Pizza (medium 8 slices),1 pizza (800g),2200
+Fast Food & Continental,Fried Chicken (Nigerian style),2 pieces (200g),430
+Fast Food & Continental,Chicken Burger,1 burger (200g),480
+Fast Food & Continental,Beef Burger,1 burger (200g),510
+Fast Food & Continental,French Fries,1 medium (150g),370
+Fast Food & Continental,Hot Dog,1 piece (120g),310
+Fast Food & Continental,Club Sandwich,1 sandwich (200g),440
+Fast Food & Continental,Grilled Chicken Sandwich,1 sandwich (200g),390
+Fast Food & Continental,Pasta (Jollof style),1 cup (250g),390
+Fast Food & Continental,Fried Rice (Chinese style),1 cup (200g),360
+Sodas & Carbonated Drinks,Coca-Cola,1 bottle (50cl),210
+Sodas & Carbonated Drinks,Pepsi,1 bottle (50cl),200
+Sodas & Carbonated Drinks,Fanta Orange,1 bottle (50cl),220
+Sodas & Carbonated Drinks,Fanta Lemon,1 bottle (50cl),200
+Sodas & Carbonated Drinks,Fanta Pineapple,1 bottle (50cl),210
+Sodas & Carbonated Drinks,Sprite,1 bottle (50cl),190
+Sodas & Carbonated Drinks,7UP,1 bottle (50cl),185
+Sodas & Carbonated Drinks,Mirinda Orange,1 bottle (50cl),215
+Sodas & Carbonated Drinks,Mirinda Strawberry,1 bottle (50cl),210
+Sodas & Carbonated Drinks,Mountain Dew,1 bottle (50cl),220
+Sodas & Carbonated Drinks,Schweppes Bitter Lemon,1 bottle (50cl),130
+Sodas & Carbonated Drinks,Schweppes Chapman,1 bottle (50cl),150
+Sodas & Carbonated Drinks,Teem (Citrus Soda),1 bottle (50cl),185
+Sodas & Carbonated Drinks,Bigi Cola,1 bottle (50cl),205
+Sodas & Carbonated Drinks,Bigi Apple,1 bottle (50cl),195
+Sodas & Carbonated Drinks,Bigi Tropical,1 bottle (50cl),200
+Sodas & Carbonated Drinks,Five Alive (Citrus),1 pack (200ml),110
+Sodas & Carbonated Drinks,Coke Zero / Diet Coke,1 bottle (50cl),2
+Sodas & Carbonated Drinks,Pepsi Zero Sugar,1 bottle (50cl),0
+Sodas & Carbonated Drinks,Lacasera (Apple Soda),1 bottle (33cl),140
+Sodas & Carbonated Drinks,Energy Drink (Fearless),1 can (250ml),110
+Sodas & Carbonated Drinks,Energy Drink (Power Horse),1 can (250ml),115
+Sodas & Carbonated Drinks,Red Bull,1 can (250ml),115
+Sodas & Carbonated Drinks,Predator Energy Drink,1 can (500ml),220
+Malt Drinks,Malta Guinness,1 bottle (33cl),170
+Malt Drinks,Maltina,1 bottle (33cl),165
+Malt Drinks,Amstel Malta,1 bottle (33cl),155
+Malt Drinks,Hi-Malt,1 bottle (33cl),160
+Malt Drinks,Dubic Malt,1 bottle (33cl),150
+Malt Drinks,Grand Malt,1 bottle (33cl),162
+Malt Drinks,Power Malt,1 bottle (33cl),158
+Malt Drinks,Maltina Sip-It (can),1 can (25cl),130
+Malt Drinks,Malta Guinness (big bottle),1 bottle (60cl),310
+Malt Drinks,Vitamalt,1 bottle (33cl),155
+Beer & Alcoholic Drinks,Guinness Stout (Nigerian),1 bottle (60cl),250
+Beer & Alcoholic Drinks,Star Lager Beer,1 bottle (60cl),235
+Beer & Alcoholic Drinks,Heineken,1 bottle (60cl),240
+Beer & Alcoholic Drinks,Budweiser,1 bottle (33cl),145
+Beer & Alcoholic Drinks,33 Export Lager,1 bottle (60cl),225
+Beer & Alcoholic Drinks,Harp Lager Beer,1 bottle (60cl),220
+Beer & Alcoholic Drinks,Trophy Lager,1 bottle (60cl),215
+Beer & Alcoholic Drinks,Goldberg Lager,1 bottle (60cl),218
+Beer & Alcoholic Drinks,Life Beer (Nigerian),1 bottle (60cl),210
+Beer & Alcoholic Drinks,Dubic Lager,1 bottle (60cl),205
+Beer & Alcoholic Drinks,Origin Lager Beer,1 bottle (60cl),208
+Beer & Alcoholic Drinks,Hero Lager Beer,1 bottle (60cl),212
+Beer & Alcoholic Drinks,Legend Extra Stout,1 bottle (60cl),255
+Beer & Alcoholic Drinks,Satzenbrau,1 bottle (33cl),130
+Beer & Alcoholic Drinks,Orijin (Herbal Spirit Drink),1 can (33cl),165
+Beer & Alcoholic Drinks,Orijin Zero (Non-alcoholic),1 can (33cl),100
+Beer & Alcoholic Drinks,Smirnoff Ice,1 bottle (27.5cl),170
+Beer & Alcoholic Drinks,Alomo Bitters,1 shot (30ml),65
+Beer & Alcoholic Drinks,Ogogoro (Local Gin),1 shot (30ml),70
+Beer & Alcoholic Drinks,Schnapps,1 shot (30ml),75
+Beer & Alcoholic Drinks,Seaman's Aromatic Schnapps,1 shot (30ml),72
+Beer & Alcoholic Drinks,Gordons Gin,1 shot (30ml),70
+Beer & Alcoholic Drinks,Campari,1 shot (30ml),80
+Beer & Alcoholic Drinks,Hennessy Cognac,1 shot (30ml),69
+Beer & Alcoholic Drinks,Red Wine,1 glass (150ml),125
+Beer & Alcoholic Drinks,White Wine,1 glass (150ml),120
+Beer & Alcoholic Drinks,Chapman (cocktail),1 glass (300ml),180
+Beer & Alcoholic Drinks,Palm Wine (fermented/stronger),1 cup (250ml),130
+Drinks & Beverages,Palm Wine,1 cup (250ml),115
+Drinks & Beverages,Zobo (Hibiscus Drink),1 cup (250ml),50
+Drinks & Beverages,Kunu (Millet Drink),1 cup (250ml),120
+Drinks & Beverages,Tiger Nut Drink (Kunun Aya),1 cup (250ml),150
+Drinks & Beverages,Fura da Nono,1 cup (250ml),180
+Drinks & Beverages,Kunu Gyada (Groundnut Drink),1 cup (250ml),170
+Drinks & Beverages,Kunu Zaki (Sweet Kunu),1 cup (250ml),130
+Drinks & Beverages,Bissap (Zobo variant),1 cup (250ml),55
+Drinks & Beverages,Fresh Coconut Water,1 cup (250ml),45
+Drinks & Beverages,Tamarind Drink (Tsamiya),1 cup (250ml),110
+Drinks & Beverages,Pineapple Juice (fresh),1 cup (250ml),130
+Drinks & Beverages,Watermelon Juice,1 cup (250ml),80
+Drinks & Beverages,Soursop (Graviola) Juice,1 cup (250ml),100
+Drinks & Beverages,Baobab Drink (Kuka),1 cup (250ml),90
+Drinks & Beverages,Agbo Jedi (Herbal Drink),1/2 cup (125ml),30
+Drinks & Beverages,Obi Larha Herbal Drink,1/2 cup (125ml),25
+Drinks & Beverages,Moringa Leaf Drink,1 cup (250ml),35
+Drinks & Beverages,Ginger and Lemon Drink,1 cup (250ml),50
+Drinks & Beverages,Pap with Milk (Akamu),1 cup (250ml),200
+Drinks & Beverages,Malta (Non-alcoholic malt),1 bottle (330ml),170
