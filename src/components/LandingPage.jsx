@@ -492,7 +492,7 @@ export default function LandingPage({ onStart }) {
 
         {/* Footer */}
         <footer className="footer">
-           MealMirror © 2025
+           MealMirror © 2026
         </footer>
       </div>
     </>
